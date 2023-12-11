@@ -80,6 +80,18 @@ class CharacterTableViewController: UITableViewController {
         }
     }
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        let dst = segue.destination as! CharacterViewController
+        // get indexpath of cell that was selected
+        let index = tableView.indexPathForSelectedRow!.row
+        // pass the name and url to the dst
+        dst.character = characterList[index]
+
+    }
+
     /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {

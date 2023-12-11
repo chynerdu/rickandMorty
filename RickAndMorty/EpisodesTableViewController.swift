@@ -80,6 +80,18 @@ class EpisodesTableViewController: UITableViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        let dst = segue.destination as! EpisodeDetailsViewController
+        // get indexpath of cell that was selected
+        let index = tableView.indexPathForSelectedRow!.row
+        // pass the name and url to the dst
+        dst.epsisode = episodesList[index]
+
+    }
+
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

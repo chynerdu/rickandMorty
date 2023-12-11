@@ -75,6 +75,17 @@ class LocationsTableViewController: UITableViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        let dst = segue.destination as! LocationDetailsViewController
+        // get indexpath of cell that was selected
+        let index = tableView.indexPathForSelectedRow!.row
+        // pass the name and url to the dst
+        dst.location = locationList[index]
+
+    }
 
     /*
     // Override to support editing the table view.

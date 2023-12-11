@@ -84,6 +84,15 @@ class CharactersAPI_Helper{
            }
        }
     
+    public static func fetchCharacterImage(urlSring: String) async throws -> Data {
+        do {
+            let data = try await fetch(urlString: urlSring)
+            return data
+        } catch {
+            throw error
+        }
+    }
+    
     
     }
 

@@ -8,6 +8,7 @@
 import UIKit
 
 class CharacterTableViewCell: UITableViewCell {
+    var task = Task {}
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var specieLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
@@ -19,8 +20,16 @@ class CharacterTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+//        performSegue(withIdentifier: "characterdetails", sender: self)
         // Configure the view for the selected state
     }
+    
+    
+    
+    override func prepareForReuse() {
+//        starImageView.image = UIImage(systemName: "person")
+        task.cancel()
+    }
+
 
 }

@@ -14,6 +14,9 @@
 		55AF18BE2B0AFA7B000BBE25 /* RickAndMorty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55AF18BC2B0AFA7B000BBE25 /* RickAndMorty.xcdatamodeld */; };
 		55AF18C02B0AFA7F000BBE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55AF18BF2B0AFA7F000BBE25 /* Assets.xcassets */; };
 		55AF18C32B0AFA7F000BBE25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55AF18C12B0AFA7F000BBE25 /* LaunchScreen.storyboard */; };
+		55CD455A2B26896700D5555B /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD45592B26896700D5555B /* CharacterViewController.swift */; };
+		55CED0722B27AD4E003C19E9 /* EpisodeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CED0712B27AD4E003C19E9 /* EpisodeDetailsViewController.swift */; };
+		55CED0742B27B1FF003C19E9 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CED0732B27B1FF003C19E9 /* LocationDetailsViewController.swift */; };
 		55D3FA6D2B17F112007336B0 /* EpisodesAPI_Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3FA6C2B17F112007336B0 /* EpisodesAPI_Helper.swift */; };
 		55D3FA6F2B17F16D007336B0 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3FA6E2B17F16D007336B0 /* Error.swift */; };
 		55D3FA712B17F284007336B0 /* EpisodesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3FA702B17F284007336B0 /* EpisodesTableViewController.swift */; };
@@ -42,6 +45,9 @@
 		55AF18BF2B0AFA7F000BBE25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55AF18C22B0AFA7F000BBE25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55AF18C42B0AFA7F000BBE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55CD45592B26896700D5555B /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		55CED0712B27AD4E003C19E9 /* EpisodeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsViewController.swift; sourceTree = "<group>"; };
+		55CED0732B27B1FF003C19E9 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		55D3FA6C2B17F112007336B0 /* EpisodesAPI_Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesAPI_Helper.swift; sourceTree = "<group>"; };
 		55D3FA6E2B17F16D007336B0 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		55D3FA702B17F284007336B0 /* EpisodesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesTableViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +118,9 @@
 				55D3FA7E2B18036A007336B0 /* CharactersAPI_Helper.swift */,
 				55D3FA802B1803ED007336B0 /* CharacterTableViewController.swift */,
 				55D3FA822B180403007336B0 /* CharacterTableViewCell.swift */,
+				55CD45592B26896700D5555B /* CharacterViewController.swift */,
+				55CED0712B27AD4E003C19E9 /* EpisodeDetailsViewController.swift */,
+				55CED0732B27B1FF003C19E9 /* LocationDetailsViewController.swift */,
 			);
 			path = RickAndMorty;
 			sourceTree = "<group>";
@@ -202,10 +211,13 @@
 				55AF18BE2B0AFA7B000BBE25 /* RickAndMorty.xcdatamodeld in Sources */,
 				55AF18B82B0AFA7B000BBE25 /* ViewController.swift in Sources */,
 				55AF18B42B0AFA7B000BBE25 /* AppDelegate.swift in Sources */,
+				55CED0722B27AD4E003C19E9 /* EpisodeDetailsViewController.swift in Sources */,
 				55D3FA812B1803ED007336B0 /* CharacterTableViewController.swift in Sources */,
 				55D3FA792B17FEEE007336B0 /* LocationsAPI_Helper.swift in Sources */,
 				55D3FA832B180403007336B0 /* CharacterTableViewCell.swift in Sources */,
 				55DB863F2B0B02BB009427D6 /* episodesModel.swift in Sources */,
+				55CED0742B27B1FF003C19E9 /* LocationDetailsViewController.swift in Sources */,
+				55CD455A2B26896700D5555B /* CharacterViewController.swift in Sources */,
 				55DB86372B0AFEA1009427D6 /* TabBarViewController.swift in Sources */,
 				55D3FA732B17F710007336B0 /* CacheEntry.swift in Sources */,
 				55D3FA712B17F284007336B0 /* EpisodesTableViewController.swift in Sources */,

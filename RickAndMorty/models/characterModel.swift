@@ -18,6 +18,7 @@ struct Character: Codable {
     let name: String
     let status: String
     let species: String
+    let url: String
     
 }
 
@@ -27,5 +28,6 @@ struct CharacterDetails: Codable {
     let species: String
     let gender: String
     let image: String
+    let url: String
     
 }
